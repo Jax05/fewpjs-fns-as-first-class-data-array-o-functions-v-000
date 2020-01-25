@@ -22,10 +22,14 @@ function unleashDog(dogName, dogBreed) {
   console.log(`Unleash ${dogName} the ${dogBreed}`);
 }
 
-const routine = [wakeDog(), leashDog(), walkToPark(), throwFrisbee(), walkHome(), unleashDog()]
+const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashDog];
 
 function exerciseDog(dogName, dogBreed) {
+  personalizedRoutine = [];
+  
   for (i = 0; i < routine.length; i++) {
-    routine[i]
+    personalizedRoutine.push(routine[i](dogName, dogBreed));
   }
+
+  return personalizedRoutine;
 }
