@@ -47,6 +47,7 @@ function exerciseDog(dogName, dogBreed) {
 
   for (let i = 0; i < routine.length; i++) {
     let message = routine[i](dogName, dogBreed);
+    
     personalizedRoutine.push(message)
   }
 
