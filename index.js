@@ -26,7 +26,7 @@ const routine = [wakeDog, leashDog, walkToPark, throwFrisbee, walkHome, unleashD
 
 function exerciseDog(dogName, dogBreed) {
   personalizedRoutine = [];
-  
+
   for (i = 0; i < routine.length; i++) {
     personalizedRoutine.push(routine[i](dogName, dogBreed));
   }
